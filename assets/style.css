@@ -1,0 +1,46 @@
+:root {
+  color-scheme: dark;
+  --bg: #0b0d10;
+  --panel: #141821;
+  --text: #e8ecf1;
+  --muted: #9aa4b2;
+  --accent: #7ee787;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  background: radial-gradient(circle at top, #16202b 0%, var(--bg) 55%);
+  color: var(--text);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.panel {
+  width: min(620px, 90vw);
+  padding: 3rem;
+  background: var(--panel);
+  border: 1px solid rgba(126, 231, 135, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  margin: 0 0 1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.lead {
+  font-size: 1.2rem;
+  color: var(--accent);
+}
+
+.hint {
+  color: var(--muted);
+}
